@@ -21,13 +21,25 @@
 	<h2>Reflection</h2>
 
 	<h3>Problems We Had</h3>
-	<p>The routers (tables connected with 2 or 3 other tables) were
+	<p>First of all, everyone didn't know where our destination was, 
+	which created chaos, and some got lost during the chaos. 
+	Additionally, the routers 
+	(tables connected with 2 or 3 other tables) were
 	given too many packets at once to sort and pass them.</p>
 	<h3>Protocols We Came Up With</h3>
 	<ul>
-		<li>Writing the destination on the header.</li>
-		<li>Listing how many packets they sent at once.</li>
-		<li>Listing the order that the data was sent.</li>
+		<li>Asking "Who are you?" and "Who are your neighbors?" 
+		to map out at least some parts of the classroom.</li>
+		<li>Writing the starting point and the destination
+		on the header so routers are informed enough to
+		find the best path.</li>
+		<li>Listing how many packets it was sent with to tell
+		if the person received knows they have all the packets
+		they need.</li>
+		<li>Listing the order of the data that was sent so the 
+		person received can order them properly.</li>
+		<li>Not sending all the packets at once, so the routers
+		won't have to deal with many packets at once.</li>
 	</ul>
 </body>
 </html>
