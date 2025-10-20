@@ -13,13 +13,14 @@ Some protocols are:
 
 ## Transport
 
+Transport breaks down into packets or assembles the packets.
 
-TCP
-UDP
+TCP - Checks every part for perfect replication\
+UDP - Passes information for fast and good replication
 
 ## Internet
 
-IP
+Responsible for adresses. One protocol is the IP.
 
 ## Link
 
