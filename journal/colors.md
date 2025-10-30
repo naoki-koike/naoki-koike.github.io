@@ -1,7 +1,7 @@
 #Colors
 
-! [pixel art in code](../../images/pixel-art-in-code.png)
-! [original pixel art](../../images/original-pixel-art)
+! [pixel art in code](../images/pixel-art-in-code.png)
+! [original pixel art](../images/original-pixel-art)
 
 0A
 0A
