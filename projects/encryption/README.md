@@ -3,10 +3,10 @@
 
 ## Part 1: Key Exchange
 
-My Key:
-My Partner's Key:
+My Key: 3
+My Partner's Key: 9
 
-Our initial shared key:
+Our initial shared key: 12
 
 ## Part 2: Messaging
 
@@ -18,10 +18,10 @@ and the messages that you received.
 
 | Encoded Message | Decoded Message | Key |
 | --------------- | --------------- | --- |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
-|                 |                 |     |
+| VSZZC           | HELLO           |  12 |
+| QR QXF JAN HXD  | HI HOW ARE YOU  |  17 |
+| AIIX NBUHEM     | GOOD THANKS     |   6 |
+| CZF             | BYE             |  25 |
 
 
 ## Part 3: Connection to TCP/IP Model
