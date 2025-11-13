@@ -7,7 +7,6 @@ My Key: 3
 
 My Partner's Key: 9
 
-
 Our initial shared key: 12
 
 ## Part 2: Messaging
@@ -30,13 +29,16 @@ and the messages that you received.
 
 ### Application Layer: Turn your message into binary
 
-Everything we've done in this activity takes place in the application layer. By the time the message leaves the application
-layer, it is encoded in binary. We've been working with text for this activity for convenience, but let's see what the binary
-looks like.
+Everything we've done in this activity takes place in the application layer.
+By the time the message leaves the application layer, it is encoded in binary. 
+We've been working with text for this activity for convenience, 
+but let's see what the binary looks like.
 
-Go back to the first encrypted message that you sent (it should be in `rsa_encryption_activity/send/encrypted_message.b64`).
+Go back to the first encrypted message that you sent (it should be in 
+rsa_encryption_activity/send/encrypted_message.b64`).
 
-This message is represented as a string of letters, numbers, and symbols. But we know that the real message is in binary.
+This message is represented as a string of letters, numbers, and symbols.
+But we know that the real message is in binary.
 
 Select the first six characters from this message and copy them here:
 
@@ -45,7 +47,8 @@ include leading zeroes so that each character is 8 bits):
 
 ### Transport Layer: Break your message into packets
 
-Assume that each packet can hold two bytes. Fill in the packet information below with the binary values you computed above.
+Assume that each packet can hold two bytes. 
+Fill in the packet information below with the binary values you computed above.
 
     =========
     Packet 1:
