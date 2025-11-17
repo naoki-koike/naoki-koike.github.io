@@ -3,9 +3,7 @@
 
 ## Part 1: Key Exchange
 
-My Key: 3
-
-My Partner's Key: 9
+My Key: 3\My Partner's Key: 9
 
 Our initial shared key: 12
 
