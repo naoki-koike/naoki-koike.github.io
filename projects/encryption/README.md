@@ -3,7 +3,8 @@
 
 ## Part 1: Key Exchange
 
-My Key: 3\My Partner's Key: 9
+My Key: 3\
+My Partner's Key: 9
 
 Our initial shared key: 12
 
@@ -76,6 +77,7 @@ Fill in the packet information below with the binary values you computed above.
 
 - What is the difference between symmetric and asymmetric encryption? 
 What purpose did each serve in this simulation?
+ -The difference between 
 - Why is it important that this protocol uses a new key for each message?
 - Why is it important that you never share your secret key?
 - In the transport layer, do these messages use TCP or UDP? Why?
