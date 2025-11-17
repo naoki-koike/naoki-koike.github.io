@@ -77,14 +77,31 @@ Fill in the packet information below with the binary values you computed above.
 
 - What is the difference between symmetric and asymmetric encryption? 
 What purpose did each serve in this simulation?
- -The difference between 
+ -The difference between symmetric and assymmetric encryption is that whether 
+you share a secret with the person you're messaging or not. Assymmetric 
+encryption was used to keep the shared secret impossible to decrypt.
+
 - Why is it important that this protocol uses a new key for each message?
+ -It is important that this protocol uses a new key for each message to avoid 
+the adversary in the middle being able to see all the messages if they were
+able to hack.
+
 - Why is it important that you never share your secret key?
+ -It is important to never share your private key so you are the only one
+who can decrypt messages that are encrypted with your public key.
+
 - In the transport layer, do these messages use TCP or UDP? Why?
+ -In the transport layer, these messages will use TCP because 
+
 - Now that you've created packets in the transport layer, 
 give a short explanation of what happens to these packets in the 
 internet layer and in the link layer.
+ -The IP protocol in the Internet layer addresses and routes the packet from
+the source to destination, and the Link layer transmits the packets through 
+protocols such as Ethernet and Wifi.
+
 - This protocol successfully encrypts the **content** of the message. 
 Even though and adversary in the middle can't read the content of the message, 
 what other information can they still see?
-
+ -They can still see who they messaged to and when the message was sent by
+examining the header.
