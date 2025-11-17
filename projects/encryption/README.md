@@ -42,8 +42,9 @@ But we know that the real message is in binary.
 
 Select the first six characters from this message and copy them here: j1gaPK
 
-Using the ASCII table, convert these five characters to binary (if necessary,
+Using the ASCII table, convert these six characters to binary (if necessary,
 include leading zeroes so that each character is 8 bits): 
+01101010 00110001 01100111 01100001 01010000 01001011
 
 ### Transport Layer: Break your message into packets
 
@@ -56,21 +57,21 @@ Fill in the packet information below with the binary values you computed above.
     Source: Naoki
     Destination: Davi
     Sequence: 1/3
-    Data: [binary for char 1] [binary for char 2]
+    Data: 01101010 00110001
     =========
     Packet 2:
 
     Source: Naoki
     Destination: Davi
     Sequence: 2/3 
-    Data: [binary for char 3] [binary for char 4]
+    Data: 01100111 01100001
     =========
     Packet 3:
 
     Source: Naoki
     Destination: Davi
     Sequence: 3/3
-    Data: [binary for char 5] [binary for char 6]
+    Data: 01010000 01001011
     =========
 
 ## Part 4: Reflection Questions
