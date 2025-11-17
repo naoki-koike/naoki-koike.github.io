@@ -35,7 +35,7 @@ We've been working with text for this activity for convenience,
 but let's see what the binary looks like.
 
 Go back to the first encrypted message that you sent (it should be in 
-rsa_encryption_activity/send/encrypted_message.b64`).
+`rsa_encryption_activity/send/encrypted_message.b64`).
 
 This message is represented as a string of letters, numbers, and symbols.
 But we know that the real message is in binary.
