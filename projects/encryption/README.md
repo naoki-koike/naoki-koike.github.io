@@ -91,7 +91,8 @@ able to hack.
 who can decrypt messages that are encrypted with your public key.
 
 - In the transport layer, do these messages use TCP or UDP? Why?
- -In the transport layer, these messages will use TCP because 
+ -In the transport layer, these messages will use TCP for perfect replication
+of the message. 
 
 - Now that you've created packets in the transport layer, 
 give a short explanation of what happens to these packets in the 
