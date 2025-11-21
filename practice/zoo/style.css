@@ -1,0 +1,18 @@
+table, th, td, tr{
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+body{
+background: #0d0cb5
+}
+.first-color { 
+	background: #c82121; 
+}
+	
+.second-color { 
+	background: #dee1ec; 
+}
+
+.third-color { 
+	background: #becbff; 
+}
