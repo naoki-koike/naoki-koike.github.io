@@ -3,16 +3,20 @@ table, th, td, tr{
 	border-collapse: collapse;
 }
 body{
-background: #0d0cb5
-}
-.first-color { 
-	background: #c82121; 
+	color: white;
+	background: #323643; 
 }
 	
 .second-color { 
-	background: #dee1ec; 
+	background: #606470; 
 }
 
 .third-color { 
-	background: #becbff; 
+	color: black;
+	background: #93deff; 
+}
+
+.fourth-color { 
+	color: black;
+	background: #f7f7f7; 
 }
