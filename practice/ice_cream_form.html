@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Ice Cream!</title>
+		<script src="../js/validate.js"></script>
+	</head>
+	<body>
+		<h1>You're invited to our Ice Cream Party!</h1>
+		<form action="https://httpbin.org/post" method="post">
+			<input type="email" name="email" required>	
+			What is your email address?
+			<br>
+			<input type="text" name="phone"
+			pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			What is your phone number?
+			<br>
+			<input type="number" name="people" required>
+			How many people will you bring with you 
+			to the party?
+			<br>
+			<p>What is your favorite flavor of ice cream?</p>
+			<input type="radio" id="Vanilla" name="flavor">Vanilla
+			<input type="radio" id="Chocolate Chip" name="flavor">
+			Chocolate Chip
+			<input type="radio" id="Strawberry" name="flavor">
+			Strawberry
+			<input type="radio" id="Other" name="flavor">Other
+			<br>
+			<p>Which toppings do you like?</p>
+
+			<input type="text" name="comments">
+			Any suggestions or comments?
+			<br>
+			<button type="submit">Submit</button>
+		</form>
+	</body>
+</html>
