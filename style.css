@@ -1,4 +1,7 @@
 body{
-	font-family="georgia", Serif;
-	background-color="#29a7e1"
+	font-family: "georgia", Serif;
+	background-color: #29a7e1;
+}
+h1{
+	text-align: center;
 }
