@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Holy Grail</title>
+	<style>	
+.grid {
+  display: grid;
+  grid:
+    'head  head ' 100px
+    'menu  main ' 1fr
+    'foot  foot ' 100px
+    /200px 1fr;
+}
+#header{
+	grid-area: head;
+	background-color: green; 
+	text-align: center;
+	border: solid white 2px;
+}
+#menu{	
+	grid-area: menu;
+	background-color: green; 
+	border: solid white 2px;
+	text-align: center;
+}
+#main{	
+	grid-area: main;
+	background-color: green; 
+	border: solid white 2px;
+	text-align: center;
+}
+#footer{	
+	grid-area: foot;
+	border: solid white 2px;
+	background-color: green; 
+	text-align: center;
+}
+	</style>
+</head>
+<body>
+	<div class=grid>
+		<div id=header>
+			<h1>Holy Grail Practice</h1>
+		</div>
+		<div id=menu>
+			<h2>Menu</h2>
+		</div>
+		<div id=main>
+			<h2>Main</h2>
+		</div>
+		<div id=footer>
+			<h2>Footer</h2>
+		</div>
+	</div>
+</body>
+</html>
