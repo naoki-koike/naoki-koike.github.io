@@ -6,10 +6,10 @@
 .grid {
   display: grid;
   grid:
-    'head  head ' 100px
-    'menu  main ' 1fr
-    'foot  foot ' 100px
-    /200px 1fr;
+    'head  head head' 100px
+    'menu  main menu2' 1fr
+    'foot  foot foot' 100px
+    /200px 1fr  200px;
 }
 #header{
 	grid-area: head;
@@ -17,7 +17,7 @@
 	text-align: center;
 	border: solid white 2px;
 }
-#menu{	
+#right-menu{	
 	grid-area: menu;
 	background-color: green; 
 	border: solid white 2px;
@@ -25,6 +25,12 @@
 }
 #main{	
 	grid-area: main;
+	background-color: green; 
+	border: solid white 2px;
+	text-align: center;
+}
+#left-menu{	
+	grid-area: menu2;
 	background-color: green; 
 	border: solid white 2px;
 	text-align: center;
@@ -42,12 +48,15 @@
 		<div id=header>
 			<h1>Holy Grail Practice</h1>
 		</div>
-		<div id=menu>
-			<h2>Menu</h2>
+		<div id=right-menu>
+			<h2>Left Menu</h2>
 		</div>
 		<div id=main>
 			<h2>Main</h2>
 		</div>
+		<div id=left-menu>
+			<h2>Right Menu</h2>
+		</div>	
 		<div id=footer>
 			<h2>Footer</h2>
 		</div>
