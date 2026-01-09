@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Welcome</title>
+	<style>
+ .grid {
+    display: grid;
+    grid:
+      'head  menu menu' 100px
+      'hero  hero hero' 3fr
+      'text  main text2' 2fr
+      'foot  foot foot' 100px
+      /1fr   3fr  1fr;
+ }
+ #header{
+         grid-area: head;
+         background-color: #13145c;
+	 color: #FF2493;
+         text-align: center;
+         border: solid white 2px;
+ }
+ #menu{
+    grid-area: menu;
+    border: solid white 2px;
+    display: grid;
+    grid:
+      'l1   l2   l3    l4' 98px
+      /1fr  1fr  1fr   1fr;
+ }
+ #link1{
+	 grid-area: l1;
+         background-color: #13145c;
+	 color: white;
+         text-align: center;
+         border-left: solid white 2px;
+	 border-bottom: solid white 2px;
+ }      
+ #link2{
+	 grid-area: l2;
+         background-color: #13145c;
+	 color: white;
+         text-align: center;
+	 border-bottom: solid white 2px;
+ }      
+ #link3{
+	 grid-area: l3;
+         background-color: #13145c;
+	 color: white;
+         text-align: center;
+	 border-bottom: solid white 2px;
+ }      
+ #link4{
+	 grid-area: l4;
+         background-color: #13145c;
+	 color: white;
+         text-align: center;
+	 border-bottom: solid white 2px;
+ }      
+ #hero{
+         grid-area: hero;
+         background-color: green;
+         border: solid white 2px;
+         text-align: center;
+ }
+ #rightText{
+         grid-area: text;
+         background-color: green;
+         border: solid white 2px;
+         text-align: center;
+ }
+ #main{
+         grid-area: main;
+         background-color: green;
+         border: solid white 2px;
+         text-align: center;
+ }
+ #leftText{
+         grid-area: text2;
+         background-color: green;
+         border: solid white 2px;
+         text-align: center;
+ }
+ #footer{
+         grid-area: foot;
+         border: solid white 2px;
+         background-color: green;
+         text-align: center;
+ }
+         </style>
+
+</head>
+<body>
+	<div class="grid">
+		<div id=header>
+			<h1>Helicopters DC</h1>
+		</div>
+		<div id=menu>
+			<div id=link1>
+				<h3>Routes</h3>
+			</div>
+			<div id=link2>
+				<h3>Pricing</h3>
+			</div>
+			<div id=link3>
+				<h3>Calendar</h3>
+			</div>
+			<div id=link4>
+				<h3>Book Now</h3>
+			</div>
+		</div>
+		<div id=hero>
+			<h2>Optimise your experience by Tours</h2>
+		</div>
+		<div id=rightText>
+			<h2>Text</h2>
+		</div>
+		<div id=leftText>
+			<h2>More text</h2>
+		</div>		
+		<div id=main>
+			<h2>This is our schedule for the month</h2>
+		</div>
+		<div id=footer>
+			<h2>Contact us!</h2>
+		</div>
+	</div>	
+</body>
+</html>
