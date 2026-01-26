@@ -2,7 +2,7 @@
 	display: grid;
 		grid:   
 	 	'header header header' 100px
-		'hero   hero   hero'   1fr
+		'hero   hero   hero'   300px
 		'main   main   main'   1fr
 		'footer footer footer' 160px
         	/1fr    1fr    1fr;
@@ -43,20 +43,20 @@
 }
 #hero{
 	grid-area: hero;
-	display: grid;                             
-                 grid:
-                 'bphoto bphoto bphoto' 1fr
-                 'bphoto bquote bphoto' 1fr
-                 'bphoto bphoto bphoto' 1fr
-                 /1fr    1fr    1fr;
-}
-#bphoto{
-	grid-area: bphoto;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	background-color: #13145c;
 }
 #bquote{
-	grid-area: bquote;
-	background-color: #FF2493;
+	color: #13145c;
+	background-color: white;
+	border: solid orange 3px;
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 20px;
 }
 #main{
 	grid-area: main;
