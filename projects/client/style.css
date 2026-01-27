@@ -79,6 +79,7 @@
 }
 .cards{
 	border: solid orange 5px;
+	margin: 4px;
 	display: grid;
 		grid:
 		't   t   t'
