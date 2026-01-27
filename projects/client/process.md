@@ -1,4 +1,4 @@
-# The developping Process
+# The Developping Process
 
 My client is my cousin, Tokio, who lives in Japan.
 
@@ -11,6 +11,11 @@ but he said he perfers bright colors that stand out.
 
 After listening to what he wants, I sketched a mock up, which he liked.
 
+![index.html mock up](media/mock-up-p1.png)
+
+![1.html (background) mock up](media/mock-up-p2.png)
+
+![2.html (professional experience) mock up](media/mock-up-p3.png)
 
 ## Phase 2: Iterative Development
 
