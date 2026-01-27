@@ -4,9 +4,21 @@
 	<title>Homepage</title>
 	<meta charset="UTF-8">
     	<link rel="stylesheet" href="style.css">
+
+	<style>
+#grid-home{
+	display: grid;
+		grid:   
+	 	'header header header' 100px
+		'hero   hero   hero'   300px
+		'main   main   main'   1fr
+		'footer footer footer' 160px
+        	/1fr    1fr    1fr;
+}
+	</style>
 </head>
 <body>
-	<div id=grid>
+	<div id=grid-home>
 		<div id=header>
 			<div id=logo>
 				<p>Takamiya Tokio</p>
