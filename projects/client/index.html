@@ -10,7 +10,7 @@
 	display: grid;
 		grid:   
 	 	'header header header' 100px
-		'hero   hero   hero'   1fr
+		'hero   hero   hero'   500px
 		'main   main   main'   1fr
 		'footer footer footer' 160px
         	/1fr    1fr    1fr;
@@ -21,7 +21,7 @@
 	<div id=grid-home>
 		<div id=header>
 			<div id=logo>
-				<a href="index.html">Takamiya Tokio<a>
+				<a href="index.html">Takamiya Tokio</a>
 			</div>
 			<div id=menu1>
 				<a href="1.html">Background</a>
@@ -46,8 +46,13 @@
 				<div class=t>
 					<h2>About Me:</h2>
 				</div>
-				<div class=mp>	
-				</div>
+				<img src="media/presenting-1-m.jpg"
+				srcset="media/presenting-1-b.jpg 790w,
+				media/presenting-1-m.jpg 546w,
+				media/presenting-1-s.jpg 334w"
+				sizes="66vw"
+				alt="Me presenting at the summit."
+				class="mp">
 				<div class=d>
 					<p>Lorem ipsum dolor sit amet,
 					consectetur adipiscing elit. 
