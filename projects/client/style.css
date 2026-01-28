@@ -56,30 +56,36 @@
         border-left: solid white 2px;
 }
 #hero{
+	position: relative;
 	grid-area: hero;
-	height: 300px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	width:fit-content;
 	text-align: center;
-	background-color: #13145c;
 }
 #bquote{
 	color: #13145c;
 	background-color: white;
 	border: solid orange 3px;
 	padding-left: 30px;
-	padding-right: 30px;
+	padding-right: 30px;	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	font-size: 20px;
 }
 #main{
 	grid-area: main;
 	display: grid;
+	overflow: hidden;
 	grid-template-columns: repeat(auto-fit, 1fr);
 }
 .cards{
 	border: solid orange 5px;
-	margin: 4px;
+	margin-top: 4px;
+	margin-bottom: 4px;
 	display: grid;
 		grid:
 		't   t   t'
