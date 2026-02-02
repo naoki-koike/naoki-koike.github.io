@@ -98,9 +98,11 @@
 .mp{
 	grid-area: mp;
 	border: solid orange 2px;
-	width: fit-content;
 	display: flex;
 	margin: 2px;
+}
+.card-img{
+	width: 100%;
 }
 .d{
 	border: solid orange 2px;
