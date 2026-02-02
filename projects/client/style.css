@@ -60,8 +60,6 @@
 	grid-area: hero;
 	display: flex;
 	justify-content: center;
-	align: flex-start;
-	width: fit-content;
 	overflow: hidden;
 	text-align: center;
 }
@@ -90,7 +88,7 @@
 	display: grid;
 		grid:
 		't   t   t'
-		'mp  mp  d' 1fr
+		'mp  mp  d' 2fr
 		'd2  d2  d' 1fr
 		/1fr 1fr 1fr;	
 }
