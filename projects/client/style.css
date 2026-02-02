@@ -99,7 +99,7 @@
 	grid-area: mp;
 	border: solid orange 2px;
 	width: fit-content;
-	height: fit-content;
+	display: flex;
 	margin: 2px;
 }
 .d{
