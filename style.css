@@ -11,16 +11,16 @@ body{
         	/1fr    1fr    1fr;
 }
 
-#header{
+header{
+	grid-area: header; 
 	background-color: #13145c;
 	color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	border: solid white 2px;
-	grid-area: header; 
 }
-#main{
+main{
 	grid-area: main;
 	display: grid;
 	grid:
@@ -45,7 +45,7 @@ body{
 	text-align: center;
 	color: #0000AA;
 }
-#footer{
+footer{
         grid-area: footer;
         text-align: center;
 	border: solid white 2px;
