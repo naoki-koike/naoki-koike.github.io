@@ -6,10 +6,12 @@ body{
 	color: white;
 	font-family: "Times New Roman", serif;
 	padding-left: 10px;
-	margin: 10px
-	background: #323643; 
+	margin: 10px;
+	background-color: #323643; 
 }
-	
+a{
+	background-color: white;
+}	
 .second-color { 
 	background: #606470; 
 }
