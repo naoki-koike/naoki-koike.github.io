@@ -6,7 +6,7 @@ body{
 	display: grid;
 		grid:   
 	 	'header header header' 100px
-		'image  main   main'   1fr
+		'main  main   main'   1fr
 		'footer footer footer' 160px
         	/1fr    1fr    1fr;
 }
@@ -17,31 +17,68 @@ body{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border-bottom: solid white 2px;
+	border: solid white 2px;
 	grid-area: header; 
+}
+#main{
+	grid-area: main;
+	display: grid;
+	grid:
+	'image  md     md' 1fr
+       	/1fr    1fr    1fr;
+	border: solid white 2px;
+	background-color: #19a7e1;
+	padding: 20px;
 }
 #image{
 	grid-area: image;
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
-	padding-bottom: 10px;
-	padding-top: 10px;	
-	border-top: solid white 2px;
-	background-color: #19a7e1;
 }
-#main{
-	grid-area: main;
+#md{
+	grid-area: md;
 	overflow: hidden;	
-	padding-bottom: 10px;
-	padding-top: 10px;
-	background-color: #19a7e1;
-	border-top: solid white 2px;
+	padding: 20px;
 }
 .pa{
 	text-align: center;
 	color: #0000AA;
 }
+#footer{
+        grid-area: footer;
+        text-align: center;
+	border: solid white 2px;
+	font-size: 20px;
+	background-color: #13135B;
+	display: flex;
+	justify-content: center;
+	color: white;
+	align-items: center;
+}
+h1,h2{
+	text-align: center;
+	overflow: hidden;
+}
+a{
+	text-align: center;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .cards{
 	border: solid orange 5px;
 	margin-top: 4px;
@@ -66,7 +103,6 @@ body{
 	width: 100%;
 }
 .d{
-	border: solid orange 2px;
 	margin: 2px;
 	grid-area: d;
 }
@@ -74,22 +110,4 @@ body{
 	grid-area: d2;
 	margin: 2px;
 	border: solid orange 2px;
-}
-#footer{
-        grid-area: footer;
-        text-align: center;
-	border-top: solid white 4px;
-	font-size: 20px;
-	background-color: #13135B;
-	display: flex;
-	justify-content: center;
-	color: white;
-	align-items: center;
-}
-h1,h2{
-	text-align: center;
-	overflow: hidden;
-}
-a{
-	color: white;
 }
