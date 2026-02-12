@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Canvas</title>
+	<style>
+canvas{
+	border: solid black 2px;
+}
+	</style>
+</head>
+<body>
+	<h1>Canvas</h1>
+	<canvas id="canvas" width="800" height="800"></canvas>
+	<script>
+		const canvas = document.getElementById("canvas");
+		const ctx = canvas.getContext("2d");
+		
+		//draw circle
+		ctx.fillStyle = "red";
+		ctx.beginPath();
+		ctx.arc(350, 400, 50, -Math.PI, 0);
+		ctx.fill();
+		//draw circle
+		ctx.fillStyle = "red";
+		ctx.beginPath();
+		ctx.arc(450, 400, 50, Math.PI, 2*Math.PI);
+		ctx.fill();
+		//draw triangle		
+		ctx.beginPath();
+		ctx.moveTo(400, 550);
+		ctx.lineTo(500, 400);
+		ctx.lineTo(300, 400);
+		ctx.fill();
+	</script>
+</body>
+</html>
