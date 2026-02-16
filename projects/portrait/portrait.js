@@ -1,25 +1,3 @@
-	//draw rect	
-//		ctx.fillStyle = "green";
-//		ctx.fillRect(100, 100, 200, 300);
-	//draw circle
-//		ctx.fillStyle = "red";
-//		ctx.beginPath();
-//		ctx.arc(400, 500, 100, 500, Math.PI**2);
-//		ctx.fill();
-	//draw elipse
-//		ctx.fillStyle = "black";
-//		ctx.beginPath();
-//		ctx.ellipse(300, 700, 200, 50, 0, Math.PI/6, Math.PI**2);
-//		ctx.fill();	
-	//draw triangle		
-//		ctx.beginPath();
-//		ctx.moveTo(700, 50);
-//		ctx.lineTo(750, 150);
-//		ctx.lineTo(650, 150);
-//		ctx.stroke();
-//		ctx.fill();
-
-
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");     
 
@@ -40,7 +18,7 @@ ctx.fill();
 
 //draw head
 ctx.beginPath();
-ctx.moveTo(130, 170);
+ctx.moveTo(120, 170);
 ctx.lineTo(250, 80);
 ctx.lineTo(150, 350);
 ctx.fillStyle = "black";
@@ -66,10 +44,48 @@ ctx.moveTo(550, 330);
 ctx.lineTo(550, 450);
 ctx.lineTo(650, 330);
 ctx.fill();
+
 //draw eyes
+ctx.beginPath();
+ctx.arc(270, 350, 20, 0, 2*Math.PI);
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(260, 340, 10, 0, 2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(430, 360, 20, 0, 2*Math.PI);
+ctx.fillStyle = "black";
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(420, 350, 10, 0, 2*Math.PI);
+ctx.fillStyle = "white";
+ctx.fill();
 
 //draw nose
 
 //draw ears
+ctx.beginPath();
+ctx.moveTo(140, 290);
+ctx.lineTo(115, 310);
+ctx.lineTo(120, 370);
+ctx.lineTo(160, 390);
+ctx.closePath();
+ctx.fillStyle = "#FFBF00";
+ctx.fill();
+ctx.stroke();
 
-//mouth
+ctx.beginPath();
+ctx.moveTo(610, 375);
+ctx.lineTo(600, 430);
+ctx.lineTo(550, 450);
+ctx.closePath();
+ctx.fillStyle = "#FFBF00";
+ctx.fill();
+ctx.stroke();
+
+//draw mouth
