@@ -67,6 +67,13 @@ ctx.fillStyle = "white";
 ctx.fill();
 
 //draw nose
+ctx.beginPath();
+ctx.moveTo(340, 375);
+ctx.lineTo(360, 430);
+ctx.lineTo(350, 450);
+ctx.fillStyle = "#FFBF00";
+ctx.fill();
+ctx.stroke();
 
 //draw ears
 ctx.beginPath();
@@ -89,3 +96,9 @@ ctx.fill();
 ctx.stroke();
 
 //draw mouth
+ctx.beginPath();
+ctx.moveTo(300, 555);
+ctx.lineTo(360, 570);
+ctx.lineTo(390, 560);
+ctx.fillStyle = "#FFBF00";
+ctx.stroke();
