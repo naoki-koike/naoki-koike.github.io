@@ -10,13 +10,9 @@
 
 
 	//define functions
-	function drawRect(x,y) {
-		console.log("drawing rect");
-		ctx.clearRect(0, 0, canvas.width, canvas.height);
-		ctx.fillStyle = 'blue';
-		ctx.fillRect(x,y,50,50);
-		ctx.fill();
-	}
+	ctx.fillStyle = "green";
+	ctx.fillRect(0,0,800,800);
+
 	function fillColoredCircle(x, y, r, color){
 		ctx.beginPath();
 		ctx.fillStyle = color;
@@ -27,13 +23,13 @@
 	let x = 0;
 	let y = 140;
 	let x2 = -100;
-	let speed = 10;
+	let ballSpeed = 15;
 	let time = 0;
 	function animate() {	
 		time = time + 1
-
+		ballSpeed = ballSpeed - 0.1
 		if (time<160){
-			x = x + speed
+			x = x + ballSpeed
 			if (time<20){
 				y = y - 3
 			}else if (time<40){
@@ -47,10 +43,13 @@
 			}
 		}
 		if (time>160){	
-			x2 = x2 + speed;
+			x2 = x2 + 10;
 		}		
 		
 		ctx.clearRect(0, 0, 800, 800);
+		
+		ctx.fillStyle = "green";
+		ctx.fillRect(0,0,800,800);
 		
 		fillColoredCircle(x, y, 10, "red");
 
