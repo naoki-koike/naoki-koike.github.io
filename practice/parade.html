@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+	<canvas id=canvas width=800 height=800></canvas>
+	<script>
+	const canvas = document.getElementById("canvas");
+	const ctx = canvas.getContext("2d");
+
+
+	//define functions
+	function drawRect(x,y) {
+		console.log("drawing rect");
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.fillStyle = 'blue';
+		ctx.fillRect(x,y,50,50);
+		ctx.fill();
+	}
+	function fillColoredCircle(x, y, r, color){
+		ctx.beginPath();
+		ctx.fillStyle = color;
+		ctx.arc(x, y, r, 0, 2*Math.PI);
+		ctx.fill();
+	}
+	
+	let x = 0;
+	let y = 140;
+	let x2 = -100;
+	let speed = 10;
+	let time = 0;
+	function animate() {	
+		time = time + 1
+
+		if (time<160){
+			x = x + speed
+			if (time<20){
+				y = y - 3
+			}else if (time<40){
+				y = y + 3
+			}else if (time<60){
+				y = y - 2
+			}else if (time<80){
+				y = y + 2
+			}else if (time<100){
+				y = y - 1
+			}
+		}
+		if (time>160){	
+			x2 = x2 + speed;
+		}		
+		
+		ctx.clearRect(0, 0, 800, 800);
+		
+		fillColoredCircle(x, y, 10, "red");
+
+		ctx.fillStyle = "brown";
+		ctx.fillRect(x2, 100, 90, 50);
+		
+		requestAnimationFrame(animate);
+	}
+
+	//call our function
+	animate();
+	
+	</script>
