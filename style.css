@@ -5,27 +5,58 @@ body{
 #grid{
 	display: grid;
 		grid:   
-	 	'header header header' 100px
-		'main  main   main'   1fr
-		'footer footer footer' 160px
-        	/1fr    1fr    1fr;
+	 	'header' 170px
+		'main'    1fr
+		'footer'  160px
+        	/1fr;
 }
-
 header{
 	grid-area: header; 
 	background-color: #13145c;
 	color: white;
+	border: solid white 2px;
+	display: grid;
+		grid:
+		'navigation' 110px
+		'page-title' 60px
+		/1fr;
+}
+#navigation{
+	grid-area: navigation;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: solid white 2px;
+	display: grid;
+	grid:
+		'logo       rest' 110px
+		/110px    1fr;
+}
+#logo{
+	grid-area: logo;
+	margin: 5px;
+}
+#bar{
+	grid-area: rest;
+	display: grid;
+	grid-auto-flow: column;
+	justify-items: center;
+}
+.bar-element{
+	padding: 10px;
+	border: solid white 1px;
+	font-size: 60px;
+}
+#page-title{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 main{
 	grid-area: main;
 	display: grid;
 	grid:
 	'image  md     md' 1fr
-       	/1fr    1fr    1fr;
+       	/1fr       1fr      1fr;
 	border: solid white 2px;
 	background-color: #19a7e1;
 	padding: 20px;
