@@ -5,7 +5,7 @@ body{
 #grid{
 	display: grid;
 		grid:   
-	 	'header' 170px
+	 	'header' 150px
 		'main'    1fr
 		'footer'  160px
         	/1fr;
@@ -17,36 +17,36 @@ header{
 	border: solid white 2px;
 	display: grid;
 		grid:
-		'navigation' 110px
-		'page-title' 60px
-		/1fr;
+		'nav-left      navigation    navigation' 80px
+		'nav-left      page-title      blank'         60px
+		/1fr             4fr                 1fr;
 }
 #navigation{
 	grid-area: navigation;
 	display: flex;
+	justify-content: right;
+	align-items: center;
+}
+#nav-left{
+	grid-area: nav-left;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: grid;
-	grid:
-		'logo       rest' 110px
-		/110px    1fr;
 }
 #logo{
 	grid-area: logo;
-	margin: 5px;
-}
-#bar{
-	grid-area: rest;
-	display: grid;
-	grid-auto-flow: column;
-	justify-items: center;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
 }
 .bar-element{
 	padding: 10px;
+	margin: 5px;
+	font-size: 30px;
 	border: solid white 1px;
-	font-size: 60px;
 }
 #page-title{
+	grid-area: page-title;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -91,8 +91,15 @@ h1,h2{
 	text-align: center;
 	overflow: hidden;
 }
+header a{
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	border-radius: 20px;
+}
 footer a{
 	text-align: center;
+	text-decoration: none;
 	color: white;
 }
 
