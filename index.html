@@ -2,6 +2,8 @@
 <html lang="en">
 
 	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Hello, World!</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="icon" href="faviconer/favicon.ico" 
@@ -11,11 +13,11 @@
 	<body>
 		<div id="grid">
 			<header>
+				<a href="index.html" id="nav-left"><img id="logo" src="faviconer/apple-touch-icon.png" alt="Logo" width="100"></a>
 				<div id="navigation">
-					<img id="logo" src="faviconer/apple-touch-icon.png" alt="Logo" width="100">
 					<nav id="bar">
-						<p class="bar-element">Projects</p>
-						<p class="bar-element">Official Portfolios</p>
+						<a class="bar-element" href="#projects">Projects</a>
+						<a class="bar-element" href="#">Official Portfolios</a>
 					</nav>
 				</div>
 				<div id="page-title">
@@ -47,7 +49,7 @@
 					unchangeable or almost meaningless things in the world like 
 					these two facts.)</p>
 	
-						<h2>Projects</h2>
+						<h2 id="projects">Projects</h2>
 						<nav>
 							<ul>
 								<li><a href="projects/recipes/index.html" 
