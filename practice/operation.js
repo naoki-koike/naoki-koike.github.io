@@ -6,6 +6,13 @@ function print(text) {
     prompt.appendChild(line);
     prompt.scrollTop = prompt.scrollHeight;
 }
+function printCount(text) {
+    const prompt = document.getElementById('count');
+    const line = document.createElement('div');
+    line.innerHTML = "<p class=problemNum>Problems Answered Correctly: <span class='number'>" + text + "</span></p>";
+    prompt.appendChild(line);
+    prompt.scrollTop = prompt.scrollHeight;
+}
 // This lets the user type input.
 document.getElementById('user-input').addEventListener('keypress', function(e) {
     if (e.key === 'Enter') {
@@ -17,9 +24,12 @@ document.getElementById('user-input').addEventListener('keypress', function(e) {
  
 let a = Math.floor(Math.random() * 100);
 let b = Math.floor(Math.random() * 100);
-
+let c = 0
 function clear(){
     document.getElementById('prompt').innerHTML = '';
+}
+function clearCount(){
+    document.getElementById('count').innerHTML = '';
 }
 
 function processInput(input){
@@ -27,7 +37,10 @@ function processInput(input){
 	clear();
 	a = Math.floor(Math.random() * 100);
 	b = Math.floor(Math.random() * 100);
-	problem();  
+	c+=1
+	problem()
+	clearCount()
+	printCount(c);
     }else{
 	print("WRONG, Try Again: ");
     }
@@ -37,4 +50,6 @@ function problem(){
 	print(`${a} + ${b} = `);
 }
 
-problem();
+problem()
+clearCount()
+printCount(c);
