@@ -11,7 +11,22 @@
     padding: 20px;
 }
 
-#prompt {
+#score {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border: 1px solid #00ff00;
+    padding-left: 20px;
+}
+
+.number {
+    color: #00ff00;
+    font-size: 23px;  
+    font-weight: bold;
+    margin: 5px;
+}
+
+#count, #prompt {
     color: #00ff00;
     margin-right: 10px;
     margin-left: 10px;    
@@ -39,6 +54,9 @@
 	</head>
 	<body>
 		<h1>Math Practice</h1>
+			<div id="score">
+				<span id="count"></span>
+			</div>
         		<div id="input-line">
             			<span id="prompt"></span>
             			<input type="text" id="user-input" placeholder="Type Answer..." autofocus>
