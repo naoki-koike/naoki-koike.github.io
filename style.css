@@ -58,7 +58,7 @@ main{
 	'image  md     md' 1fr
        	/1fr       1fr      1fr;
 	border: solid white 2px;
-	background-color: #19a7e1;
+	background: linear-gradient(156deg, #19a7e1 48%,#0000aa 98%);
 	padding: 20px;
 }
 #image{
@@ -66,6 +66,10 @@ main{
 	overflow: hidden;
 	display: flex;
 	justify-content: center;
+}
+main img{
+	border: solid darkgreen 7px;
+	border-radius: 20px;
 }
 #md{
 	grid-area: md;
